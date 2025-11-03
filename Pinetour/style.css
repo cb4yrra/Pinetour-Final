@@ -1,0 +1,821 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "GIP";
+  src: url("./fonts/GIP.woff2") format("woff2"),
+    url("./fonts/GIP.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.FINAL {
+  background-color: #d8e4e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+.Image1 {
+  background-image: url(./Image1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 773px;
+  width: 1440px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 118px;
+  padding-right: 118px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 25px;
+}
+
+.Section {
+  display: flex;
+  gap: 50px;
+  color: white;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 34px;
+}
+
+.EN {
+  background-color: white;
+  gap: 10px;
+  color: black;
+  border-radius: 24px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0%;
+  margin-top: 170px;
+}
+
+.Main h1 {
+  font-size: 80px;
+  font-weight: 400;
+  height: 80px;
+  opacity: 50%;
+  line-height: 100%;
+  vertical-align: bottom;
+}
+
+.Main h2 {
+  font-size: 250px;
+  font-weight: 400;
+  border: 2px;
+  height: 250px;
+  line-height: 100%;
+  vertical-align: bottom;
+}
+
+.Main h3 {
+  font-size: 64px;
+  height: 64px;
+  font-weight: 900;
+  line-height: 100%;
+  vertical-align: bottom;
+  opacity: 75%;
+}
+
+.Image2 {
+  background-image: url(./Image2.png);
+  background-size: cover;
+  height: 500px;
+  width: 1440px;
+  padding: 65px 120px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 37px;
+  font-weight: 400;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  left: 12px;
+  gap: 10px;
+  opacity: 80%;
+  width: 270px;
+  height: 370px;
+  justify-content: center;
+  cursor: pointer;
+  text-shadow: 0px 4px #000;
+}
+
+.frame:hover {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.destination {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: -8px -8px rgba(31, 114, 170, 0.4);
+}
+
+.shadow {
+  box-shadow: 8px 8px rgba(41, 115, 139, 0.4);
+  border-radius: 40px;
+}
+
+.terkhiin {
+  background-image: url(./Terkhiin.png);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.amar {
+  background-image: url(./Amar.png);
+}
+
+.khuvsgul {
+  background-image: url(./Khuvsgul.png);
+}
+
+.khorgiin {
+  background-image: url(./Khorgiin.png);
+}
+
+.RoadmapContainer {
+  position: relative;
+  width: 1440px;
+  height: 1022px;
+  gap: 10px;
+}
+
+.MapImage {
+  position: relative;
+  background-image: url(./MapImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 902px;
+  width: 1440px;
+}
+
+.MapPin {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 230px;
+  left: 749px;
+}
+
+.frame173 {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 1200px;
+  height: 640px;
+  top: 264px;
+  left: 120px;
+}
+
+.LeftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 513px;
+  height: 640px;
+  gap: 20px;
+}
+
+.containerbg {
+  width: 513px;
+  height: 112px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 120px;
+  background-color: #eee9d9;
+}
+
+.containerbg:hover {
+  border: 4px solid white;
+  cursor: pointer;
+}
+
+.containerbg:hover .selectpic {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.selectpos {
+  position: absolute;
+  left: 950px;
+  top: 100px;
+}
+
+.selectpic {
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  border-radius: 100%;
+}
+
+.Container {
+  display: flex;
+  width: 483px;
+  height: 48px;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+
+.LocationInfo {
+  width: 217px;
+  height: 48px;
+  gap: 4px;
+}
+
+.LocationName {
+  width: 316px;
+  height: 29px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.LocationDetails {
+  display: flex;
+  width: 94px;
+  height: 15px;
+  gap: 12px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  top: 0.5px;
+}
+
+.region {
+  width: 68px;
+  height: 15px;
+  font-size: 15px;
+  font-family: "Montserrat", "Inter", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.DayContainer {
+  position: relative;
+  width: 52px;
+  height: 48px;
+}
+
+.DayText {
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  font-family: "GIP", sans-serif;
+  font-size: 14px;
+  width: 40px;
+  height: 16px;
+  top: 18px;
+  left: 8px;
+}
+
+.Ellipse {
+  width: 52px;
+  height: 52px;
+  background-color: #f7f6f3;
+  border-radius: 100%;
+}
+
+.containerbg1 {
+  width: 513px;
+  height: 112px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 120px;
+  background-color: #8bb8c1;
+  opacity: 80%;
+}
+
+.containerbg1:hover {
+  border: 4px solid white;
+  cursor: pointer;
+}
+
+.containerbg1:hover .selectpic {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.selectpos1 {
+  position: absolute;
+  left: 750px;
+  top: 10px;
+}
+
+.containerbg2 {
+  width: 513px;
+  height: 112px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 120px;
+  background-color: #aad8d7;
+  opacity: 80%;
+}
+
+.containerbg2:hover {
+  border: 4px solid white;
+  cursor: pointer;
+}
+
+.containerbg2:hover .selectpic {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.selectpos2 {
+  position: absolute;
+  left: 600px;
+  top: 100px;
+}
+
+.containerbg3 {
+  width: 513px;
+  height: 112px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 120px;
+  background-color: #8bc0bd;
+  opacity: 80%;
+}
+
+.containerbg3:hover {
+  border: 4px solid white;
+  cursor: pointer;
+}
+
+.containerbg3:hover .selectpic {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.selectpos3 {
+  position: absolute;
+  left: 550px;
+  top: -100px;
+}
+
+.containerbg4 {
+  width: 513px;
+  height: 112px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 120px;
+  background-color: #97cce0;
+  opacity: 80%;
+}
+
+.containerbg4:hover {
+  border: 4px solid white;
+  cursor: pointer;
+}
+
+.containerbg4:hover .selectpic {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.selectpos4 {
+  position: absolute;
+  left: 750px;
+  top: 0px;
+}
+
+.RightContainer {
+  position: relative;
+  width: 647px;
+  height: 640px;
+  border-radius: 30px;
+}
+
+.mappin1 {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 181px;
+  left: 492px;
+}
+
+.mappin2 {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 42px;
+  left: 279px;
+}
+
+.mappin3 {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 416px;
+  left: 279px;
+}
+
+.mappin4 {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 164px;
+  left: 107px;
+}
+
+.frame104 {
+  position: absolute;
+  width: 1442px;
+  height: 85px;
+  top: 120px;
+  left: -1px;
+  gap: 10px;
+}
+
+.text1 {
+  text-align: center;
+  height: 51px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.text2 {
+  height: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+}
+
+.Price {
+  display: flex;
+  position: relative;
+  background-image: url(./footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1440px;
+  height: 1120px;
+}
+
+.Footer {
+  position: absolute;
+  background-color: #9fc6de;
+  top: 916px;
+  height: 204px;
+  width: 1440px;
+  border-top: 1px;
+  padding: 120px 80px;
+  gap: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 44px;
+}
+
+.media {
+  display: flex;
+  width: 358px;
+  height: 44px;
+  gap: 20px;
+}
+
+.facebook {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 167px;
+  height: 44px;
+  padding: 20px 10px;
+  gap: 10px;
+}
+
+.socialicon {
+  width: 24px;
+  height: 24px;
+}
+
+.socialtext {
+  font-family: "Montserrat", "Inter", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  width: 93px;
+  height: 22px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 18px;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 167px;
+  height: 44px;
+  padding: 20px 10px;
+  gap: 10px;
+}
+
+.logo1 {
+  width: 101px;
+  height: 35px;
+}
+
+.cardcontainer {
+  position: absolute;
+  display: flex;
+  width: 1200px;
+  height: 527px;
+  top: 204px;
+  left: 120px;
+  gap: 24px;
+}
+
+.cardpackage {
+  width: 400px;
+  height: 560px;
+  background-color: #fafbfc;
+  border-radius: 40px;
+}
+
+.cardheader {
+  display: flex;
+  align-items: center;
+  width: 384px;
+  height: 92px;
+  border-bottom: 1px;
+  padding-top: 2rem;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  gap: 16px;
+}
+
+.iconbutton {
+  width: 36px;
+  height: 36px;
+  gap: 10px;
+}
+
+.cardicon {
+  width: 36px;
+  height: 36px;
+}
+
+.cardtitle {
+  width: 160px;
+  height: 22px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.cardcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 384px;
+  height: 435px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carddetails {
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  height: 290px;
+  gap: 32px;
+}
+
+.cardprice {
+  display: flex;
+  flex-direction: column;
+  height: 78px;
+  gap: 10px;
+}
+
+.money {
+  height: 49px;
+  font-family: "Montserrat", "Inter", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.subtitle {
+  height: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  color: #919191;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  height: 180px;
+  gap: 20px;
+}
+
+.mainheader {
+  height: 22px;
+  padding-right: 40px;
+  padding-left: 40px;
+  gap: 10px;
+}
+
+.headertext {
+  width: 256px;
+  height: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.mainitem {
+  display: flex;
+  width: 336px;
+  height: 20px;
+  gap: 20px;
+}
+
+.check2 {
+  width: 20px;
+  height: 20px;
+}
+
+.itemtext {
+  width: 336px;
+  height: 34px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.itembutton {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  width: 336px;
+  height: 48px;
+  background-color: #a4d1e2;
+}
+
+.border {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.cardpackage:hover {
+  box-shadow: -8px -8px rgba(128, 128, 128, 0.5);
+  transition: all 0.4s ease;
+}
+
+.border:hover {
+  box-shadow: 8px 8px rgba(41, 114, 139, 0.5);
+  transition: all 0.4s ease;
+}
+
+.cardpackage:hover .itembutton {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.4s ease;
+  color: white;
+}
+
+.buttontext {
+  display: flex;
+  width: 125px;
+  height: 24px;
+  gap: 8px;
+}
+
+.buttontext1 {
+  width: 130px;
+  height: 20px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -1%;
+}
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+  width: 336px;
+  height: 27px;
+  gap: 10px;
+}
+
+.popborder {
+  display: flex;
+  background-color: #6972b5;
+  width: 91px;
+  height: 27px;
+  border-radius: 40px;
+  padding: 4px 16px;
+  gap: 10px;
+}
+
+.poptext {
+  width: 59px;
+  height: 19px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fafbfc;
+}
+
+.titlecontainer {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 85px;
+  position: absolute;
+  top: 40px;
+  gap: 10px;
+}
+
+.title1 {
+  width: 1440px;
+  height: 51px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  text-align: center;
+}
+
+.title2 {
+  height: 24px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #18181b;
+  opacity: 70%;
+}
